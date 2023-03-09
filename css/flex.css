@@ -5,16 +5,18 @@ a{
   text-decoration: none;
   color: #29363D;
 }
-.wrap{
+.container{
   display: flex;
-  /* flex-wrap: wrap; */
-  /* align-items: center; */
+  flex-wrap: wrap;
   gap: 32px 24px;
-  /* padding: 24px; */
   width: min(1224px, calc(100% - 60px));
   margin: auto;
 }
+.container article{
+  width: calc((100% - (24px * 3)) / 4);
+}
 .main-box{
+  width: 288px;
   background-color: #fff;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
