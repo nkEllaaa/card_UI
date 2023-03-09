@@ -1,0 +1,65 @@
+body{
+  background-color: rosybrown;
+}
+a{
+  text-decoration: none;
+  color: #29363D;
+}
+.wrap{
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  gap: 32px 24px;
+  /* padding: 24px; */
+  width: min(1224px, calc(100% - 60px));
+  margin: auto;
+}
+.main-box{
+  background-color: #fff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.main-box .thumnail{
+  width: 100%;
+  aspect-ratio: 288/196;
+  object-fit: cover;
+  vertical-align: top;/*이미지로 인한 여백을 없애주기위해 사용*/
+  /*padding top버전도 연습해보기*/
+}
+.main-box .card-text{
+  padding: 24px 16px 16px;
+}
+.main-box .card-text h2, p{
+  margin: 0;
+}
+.main-box .card-text .title{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #29363D;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 12px 0 16px;
+  height: 40px;
+}
+.main-box .content{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 12px;
+  color: #5A6A72;
+  word-break: break-all;
+  margin: 12px 0 16px;
+}
+.main-box .read{
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16.8px;
+  padding-left: 6px;
+}
